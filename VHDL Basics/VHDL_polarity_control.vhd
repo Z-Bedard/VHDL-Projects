@@ -1,0 +1,19 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+LIBRARY work;
+ENTITY VHDL_polarity_control IS
+			PORT(
+					 CONTROL_IN, AND_IN, NAND_IN, OR_IN, XOR_IN : IN STD_LOGIC;
+					 AND_OUT, NAND_OUT, OR_OUT, XOR_OUT : OUT STD_LOGIC
+					);
+END VHDL_polarity_control;
+
+ARCHITECTURE control_gates OF VHDL_polarity_control IS
+BEGIN
+
+AND_OUT <= CONTROL_IN XNOR AND_IN;
+NAND_OUT <= CONTROL_IN XNOR NAND_IN;
+OR_OUT <= CONTROL_IN XNOR OR_IN;
+XOR_OUT <= CONTROL_IN XNOR XOR_IN;
+
+END control_gates;

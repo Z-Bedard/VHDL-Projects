@@ -1,0 +1,67 @@
+# Quartus project files to KEEP (do not ignore)
+!*.qpf
+!*.qsf
+!*.sdc
+!*.qip
+!*.tcl
+!*.do
+!*.vwf
+!*.v
+!*.vh
+!*.vhd
+!*.vhdl
+!*.sv
+!*.svh
+!*.md
+!LICENSE
+
+# Quartus build outputs
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+.qsys_edit/
+*.rpt
+*.sta.rpt
+*.sta.summary
+*.sof
+*.pof
+*.jic
+*.smsg
+*.summary
+*.log
+*.html
+*.eqn
+*.pin
+*.qdb
+*.sld
+*.smsg
+*.done
+*.raw
+
+# ModelSim / Questa / simulation artifacts
+work/
+vsim.wlf
+*.wlf
+*.vstf
+*.sdo
+*.vcd
+*.sdf
+*.vho
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# Archives
+*.zip
+*.7z
+*.tar
+*.gz
